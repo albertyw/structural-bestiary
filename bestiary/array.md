@@ -28,14 +28,39 @@ finding the location within the array, deleting or updating the location is
 constant time.
 
 ### Implementation in pseudocode ###
+```
+class Array:
+    function initialize():
+        set ElementSize to be the memory size of each element
+        set StartLocation to be the beginning of the memory location of the array
+
+    function memoryLocation(index):
+        return StartLocation + index * ElementSize
+
+    function read(index):
+        return memoryLocation(index) to memoryLocation(index+1)
+
+    function update(index, element):
+        copy element to NewElementLocation
+```
 
 ## Use Cases ##
+The array data structure is one of the best ways to store data that is read or
+added sequentially.  When non-sequential access is required, linked lists or
+other data structures may be more useful.  Arrays are also extremely simple to
+implement and most programming languages natively support array data types.
 
 ## Implementations ##
+Most languages have a native implementation of array data types already.  (Some
+default to linked lists).
+
 
 ## Related Algorithms And Data Structures ##
 ### Linked Lists ###
 Linked Lists are a similar data structure to arrays but they support
 non-contiguous values with the trade off that reading arbitrary values is
 slower.
-
+### Multidimensional Array ###
+Multidimensional arrays are basically the same as normal single dimensional
+arrays, except for additional indexes/dimensions which are converted into a
+single linear array.
