@@ -17,3 +17,7 @@ and and functional focused data structure guides, the Structural Bestiary
 will focus on data structures from an imperative/object oriented background.
 
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/legitlabs/structural-bestiary/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
